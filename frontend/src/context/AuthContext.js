@@ -4,7 +4,8 @@ const initial_state = {
    // user: localStorage.getItem("user") !== undefined ? JSON.stringify(localStorage.getItem("user")) : null,
    // user: localStorage.getItem("user") !== undefined ? localStorage.getItem("user") : null,
    user: localStorage.getItem("user") !== undefined ? JSON.parse(localStorage.getItem("user")) : null,
-   loading: false,
+   // user : null,
+   loading: false, //null
    error: null
 }
 
