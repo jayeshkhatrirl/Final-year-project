@@ -18,6 +18,16 @@ const corsOptions = {
    credentials: true
 }
 
+app.use(cors(
+   {
+      origin:["https://deploy-mern-1whq.vercel.app"],
+      methods:["POST", "GET"],
+      credentials: true
+   }
+));
+
+mongoose.connect('mongodb+srv://Jayesh:Khatri@2003@cluster0.v5uceap.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0')
+
 mongoose.set("strictQuery", false);
 const connect = async() => {
    try {
