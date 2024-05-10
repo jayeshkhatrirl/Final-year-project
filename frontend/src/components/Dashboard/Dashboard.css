@@ -13,8 +13,8 @@ body {
   }
   
   .sidebar {
-    background-color: #333;
-    color: rgb(155, 21, 21);
+    background-color:orange;
+    color: white;
     padding: 20px;
   }
   
@@ -34,6 +34,7 @@ body {
   
   .content {
     padding: 20px;
+    background-color: rgb(255, 236, 201);
   }
   
   /* Responsive Layout */
@@ -82,10 +83,10 @@ body {
   }
   
   ul li {
-    border: 1px solid #ddd;
+    border: 1px solid white;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #f9f9f9;
+    background-color: white;
   }
   
   /* Add more styling based on your specific design preferences */
