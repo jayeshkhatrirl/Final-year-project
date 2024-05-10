@@ -25,13 +25,14 @@ const nav__links = [
    }
 ];
 const Header = () => {
-   // let nav_links = [];
+   let nav_links = [];
    const headerRef = useRef(null)
    const menuRef = useRef(null)
    const navigate = useNavigate()
    const { user, dispatch } = useContext(AuthContext)
    
    const logout = () => {
+      localStorage.clear();
       dispatch({ type: 'LOGOUT' })
       navigate('/')
    }
@@ -74,15 +75,16 @@ const Header = () => {
                   <div className="navigation" ref={menuRef} onClick={toggleMenu}>
                      
                      <ul className="menu d-flex align-items-center gap-5">
-                     {  
+                     
+                     {(localStorage.getItem('user')!=='undefined')? 
                   nav__links.map((item, index) => (
-                    (item.display === 'DashBoard' && !isAdminLoggedIn()) ? null : (
+                    (item.display == 'DashBoard' && !isAdminLoggedIn()) ? null : (
                       <li className="nav__item" key={index}>  
                         <NavLink to={item.path} className={navClass => navClass.isActive ? 'active__link' : ''}>{item.display}</NavLink>
                       </li>
                     )
                   ))
-                }
+                :navigate('/register')}
               </ul>
             </div>
                   {/* ================================ */}

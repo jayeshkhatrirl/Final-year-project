@@ -13,7 +13,7 @@ const Dashboard = () => {
         <h1>Welcome to Tours and Travels Dashboard</h1>
         <div className="overview">
           <h2>Overview</h2>
-          <p>This is where we can get an overview of our tours and travels business.</p>
+          <p>This is where you can get an overview of your tours and travels business.</p>
         </div>
         <div className="charts">
           <h2>Sales Chart</h2>

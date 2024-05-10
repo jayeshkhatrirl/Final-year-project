@@ -32,7 +32,9 @@ export const login = async (req, res) => {
 
       // if user doesn't exist
       if (!user) {
+         localStorage.clear()
          return res.status(404).json({ success: false, message: 'User not found!' })
+         
       }
 
       // if user is exist then check the passord or compare the password

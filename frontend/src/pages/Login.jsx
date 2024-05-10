@@ -36,8 +36,11 @@ const Login = () => {
          })
 
          const result = await res.json()
-         if(!res.ok) alert(result.message)
-         console.log(result.data)
+         if(!res.ok) {alert(result.message)
+            localStorage.clear();
+           console.log(result.data)
+           navigate('/')
+         }
 
          dispatch({type:"LOGIN_SUCCESS", payload:result.data})
          navigate('/')

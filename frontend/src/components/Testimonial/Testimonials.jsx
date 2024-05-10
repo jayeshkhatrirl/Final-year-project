@@ -8,10 +8,10 @@ const Testimonials = () => {
    const settings = {
       dots:true,
       infinite:true,
-      autoplay:true,
+      autoPlay:true,
       speed:1000,
       swipeToSlide:true,
-      autoplaySpeed:2000,
+      autoPlaySpeed:2000,
       slidesToShow:3,
 
       responsive: [
