@@ -29,10 +29,9 @@ const Home = () => {
                      </div>
                      <h1>Traveling opens the door to creating <span className='hightlight'> memories</span></h1>
                      <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Ullam ipsum nobis asperiores soluta voluptas quas voluptates.
-                        Molestiae tempora dignissimos, animi praesentium molestias perferendis
-                        porro expedita delectus. Soluta natus porro.
+                     Discover the magic of travel with TravelWorld. Our expertly curated tours and travel services 
+                     promise unforgettable adventures, where every moment is an opportunity to create cherished memories. 
+                     Let us guide you on your next journey of discovery."
                      </p>
                   </div>
                </Col>
